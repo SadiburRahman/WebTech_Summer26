@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>USER Registration Form</h1>
+
+        <form>
+            <fieldset>
+                <legend> Personal Information </legend>
+                <table>
+                    <tr>
+                        <td><label for="firstName"> First Name* </label></td>
+                        <td>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="lastName"> Last Name* </label></td>
+                        <td>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="DOB"> Date Of Birth* </label></td>
+                        <td>
+                            <input type="date" id="DOB" name="DOB">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="gender">Gender* </label></td> 
+                        <td>
+                            <input type="radio" id="male" name="Gender" value="male">
+                            <label for="PatientMale">Male</label>
+                            <input type="radio" id="female" name="Gender" value="female">
+                            <label for="PatientFemale">Female</label>
+                            <input type="radio" id="other" name="Gender" value="other">
+                            <label for="PatientFemale">Other</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        
+            <fieldset>
+                <legend> Contact Information </legend>
+                <table>
+                    <tr>
+                        <td><label for="Email"> Email Address* </label></td>
+                        <td>
+                            <input type="email" id="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phoneNumber"> Phone Number* </label></td>
+                        <td>
+                            <input type="text" id="phoneNumber" name="phoneNumber">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="address"> Address </label></td>
+                        <td>
+                            <textarea id="address" name="address" rows="2" cols="20" Style="resize:none" placeholder="Enter your full address"></textarea>
+                        </td> 
+                    </tr>
+
+                    <tr>
+                        <td> <label for="country"> Country </label></td>
+                        <td>
+                            <select id="country">
+                                <option id="Default" value="Default"> -- Select Country -- </option>
+                                <option id="BD" value="Bangladesh"> Bangladesh </option>
+                                <option id="UK" value="UnitedKingdom"> United Kingdom </option>
+                                <option id="Brazil" value="Brazil"> Brazil </option>
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> Account Information </legend>
+                <table>
+                    <tr>
+                        <td> <label for="username"> User Name: </label> </td>
+                        <td> <input type="text" id="username" name="username"> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="password"> Password: </label> </td>
+                        <td> <input type="password" id="password" name="password"> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <label for="Conpassword">Confirm Password: </label> </td>
+                        <td> <input type="Conpassword" id="Conpassword" name="Conpassword"> </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend> Preferences </legend>
+                <table>
+                    <tr>
+                        <td> <label for="interests"> Interests </label></td>
+                        <td>
+                            <input type="checkbox" id="soprts" name="interests">
+                            <label for="soprts"> Sports </label>
+                            <input type="checkbox" id="music" name="interests">
+                            <label for="music"> Music </label>
+                            <br>
+                            <input type="checkbox" id="reading" name="interests">
+                            <label for="reading"> Reading </label>
+                            <input type="checkbox" id="technology" name="interests">
+                            <label for="Technology"> Technology </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="Condition" name="Condition">
+                            <label for="Condition"> I agree to the Terms and Conditions* </label>
+                            <br>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> 
+                            <br>
+                            <input type="submit" value="Submit"> 
+                            <input type="reset" value="Reset"> 
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            
+
+        </form>
+    </div>
+</body>
+
+</html>
