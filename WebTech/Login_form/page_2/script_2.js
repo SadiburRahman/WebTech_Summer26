@@ -7,7 +7,7 @@ function collect_data()
     collect_dob();
     collect_phonenumber();
     collect_address();
-    // collect_gender();
+    collect_gender();
     return false;
 }
 
@@ -60,9 +60,9 @@ function collect_address()
     return false;
 }
 
-// function collect_gender()
-// {
-//     let gender = document.querySelector('input[name="gender"]:checked').value;
-//     console.log("User's GENDER: " + gender);
-//     return false;
-// }
+function collect_gender()
+{
+    let gender = document.querySelector('input[name="gender"]:checked').value;
+    console.log("User's GENDER: " + gender);
+    return false;
+}
