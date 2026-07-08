@@ -1,0 +1,124 @@
+<!DOCTPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="design_2.css">
+	<script src="script_2.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form onsubmit="return collect_data()">
+			<fieldset>
+				<table>
+					<tr>
+						<td>
+							<label for="signup"> SIGN UP </label>
+						</td>
+					</tr>
+					<tr>
+						<td>    
+							<label for="firstname"> FIRST NAME </label>
+						</td>
+						<td>
+							<label for="lastname" style="width:102%; margin-left: -85%;"> LAST NAME </label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text" id="firstname" name="firstname" placeholder="first" style="width:62%;">
+						</td>
+						<td>
+							<input type="text" id="lastname" name="lastname" placeholder="last" style="width:152%; margin-left: -86%; margin-top: -15px;">
+						</td>
+					</tr>
+                    <tr>
+                        <td>
+					    	<label for="email"> EMAIL ADDRESS </label>
+                        </td>
+				    </tr>
+					<tr>
+                        <td>
+						    <input type="email" id="email" name="email" placeholder="abc@example.com">
+						</td>
+					</tr>
+					<tr>
+                        <td>
+						    <label for="password"> PASSWORD </label>
+                        </td>
+					</tr>
+					<tr>
+                        <td>
+						    <input type="password" id="password" name="password" placeholder="Enter your password">
+						</td>
+					</tr>
+                    <tr>
+                        <td>
+    					    <label for="confirmpassword"> CONFIRM PASSWORD </label>
+                        </td>
+                    </tr>
+					<tr>
+                        <td>
+						    <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password">
+                        </td>
+					</tr>
+                    <tr>
+                        <td>
+    					    <label for="dob"> DATE OF BIRTH </label>
+                        </td>
+					</tr>
+					<tr>
+                        <td>
+						    <input type="date" id="dob" name="dob">
+                        </td>
+					</tr>
+                    </tr>
+                    <tr>
+                        <td>
+    					    <label for="phonenumber"> PHONE NUMBER </label>
+                        </td>
+					</tr>
+					<tr>
+                        <td>
+						    <input type="text" id="phonenumber" name="phonenumber" placeholder="Enter your phone number">
+                        </td>
+					</tr>
+                    <tr>
+                        <td>
+    					    <label for="address"> ADDRESS </label>
+                        </td>
+					</tr>
+					<tr>
+                        <td> 
+						    <textarea id="address" name="address" placeholder="Enter your address" rows="3" cols="50" style="resize:none"></textarea>
+                        </td>
+					</tr>
+                    <tr>
+                        <td>
+    					    <label for="gender"> GENDER </label>
+                        </td>
+                    </tr>
+                    
+                        <td>
+                            <input type="radio" id="male" name="gender" value="MALE">
+                            <label for="male"> MALE </label>
+  
+                            <input type="radio" id="female" name="gender" value="FEMALE">
+                            <label for="female"> FEMALE </label>
+
+                            <input type="radio" id="other" name="gender" value="OTHER">
+                            <label for="other"> OTHER </label>
+                        </td>
+					</tr>  
+                    <tr>
+                        <td>
+                            <input type="submit" value="SIGN UP" id="signupbtn" name="signupbtn">
+                        </td>
+                    </tr>
+				</table>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="design_1.css">
+    <script src="script_1.js"></script>
     <title>Login</title>
 </head>
 
 <body>
     <div class="container">
-        <form>
+        <form onsubmit="return collect_data()" >
             <fieldset>
                 <table>
                     <tr>
@@ -17,13 +18,11 @@
                             <label for="login" style="font-size: 28px; font-weight: bold;"> Login </label>
                         </td>
                     </tr>
-                    
                     <tr>
                         <td>
                             <input type="email" id="email" name="email" placeholder="Email">
                         </td>   
                     </tr>
-                    
                     <tr>
                         <td>
                             <input type="password" id="password" name="password" placeholder="Password">
@@ -42,7 +41,6 @@
                     </tr>
                 </table>
             </fieldset>
-                
         </form>
     </div>
 </body>
