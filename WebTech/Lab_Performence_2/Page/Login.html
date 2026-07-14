@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Design/design.css">
+    <script src="../JavaScript/Script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="width: 280px; margin: 0 auto; margin-top: 250px;">
+        <form onsubmit="return collect_data()">
+            <fieldset>
+                <legend>LOG IN</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username :</label>
+                            <input type="text" id="username" name="username" placeholder="Enter Username">
+                            <p id="error_username" style="color: red; font-size: 11px;"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password  :</label>
+                            <input type="password" id="password" name="password" placeholder="Enter Password">
+                            <p id="error_password" style="color: red; font-size: 11px;"></p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" id="loginBtn" value="Log In" style="padding: 10px 20px; border: none; width: 100%;">
+                        </td>
+
+                    <tr>
+                        <td>
+                            <p id="failed" style="color: red; font-weight: bold; font-size: 16px; margin-top: 5px;"></p>
+                            <p id="successful" style="color: green; font-weight: bold; font-size: 16px; margin-top: 5px;"></p>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
