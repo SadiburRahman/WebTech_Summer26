@@ -1,35 +1,65 @@
 function collect_data() 
 {
-    collect_firstname();
-    collect_lastname();
-    collect_email();
-    collect_password();
-    collect_dob();
-    collect_phonenumber();
-    collect_address();
-    collect_gender();
+    let isValidFullName = collect_fullname();
+    let isValidEmail = collect_email();
+    let isValidPassword = collect_password();
+    let isValidDob = collect_dob();
+    let isValidPhoneNumber = collect_phonenumber();
+    let isValidAddress = collect_address();
+    let isValidGender = collect_gender();
     return false;
 }
 
-function collect_firstname()
+function collect_fullname()
 {
-    let firstname = document.getElementById("firstname").value;
-    console.log("User's FIRST NAME: " + firstname);
-    return false; 
-}
+    let fullname = document.getElementById("fullname").value;
 
-function collect_lastname()
-{
-    let lastname = document.getElementById("lastname").value;
-    console.log("User's LAST NAME: " + lastname);
-    return false; 
+    if (fullname.trim() == "")
+    {
+        document.getElementById("error_fullname").innerHTML = "Full name is required.";
+        return false;    
+    }
+    else if (fullname.length < 3)
+    {
+        document.getElementById("error_fullname").innerHTML = "Full name must be at least 3 characters long.";
+        return false;    
+    }
+    else if (fullname[0] == " " || fullname[fullname.length - 1] == " " )
+    {
+        document.getElementById("error_fullname").innerHTML = "Full name cannot start or end with a space.";
+        return false;    
+    }
+    else if (fullname[0] == "1" || fullname[fullname.length - 1] == "2" || fullname[0] == "3" || fullname[fullname.length - 1] == "4" 
+             || fullname[0] == "5" || fullname[fullname.length - 1] == "6" || fullname[0] == "7" || fullname[fullname.length - 1] == "8" 
+             || fullname[0] == "9" || fullname[fullname.length - 1] == "0")
+    {
+        document.getElementById("error_fullname").innerHTML = "Full name cannot start or end with a digit.";
+        return false;    
+    }
+    else
+    {
+        document.getElementById("error_fullname").innerHTML = "";
+        console.log("User's FULL NAME: " + fullname);
+        return false; 
+    }
+
+    
 }
 
 function collect_email()
 {
     let email = document.getElementById("email").value;
+
+    if (email.trim() == "")
+    {
+        document.getElementById("error_email").innerHTML = "Email is required.";
+        return false;    
+    }   
+
+    document.getElementById("error_email").innerHTML = "";
     console.log("User's EMAIL: " + email);
-    return false; 
+    return false;
+    
 }
 
 function collect_password()

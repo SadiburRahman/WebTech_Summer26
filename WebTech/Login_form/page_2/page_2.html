@@ -19,18 +19,13 @@
 					</tr>
 					<tr>
 						<td>    
-							<label for="firstname"> FIRST NAME </label>
-						</td>
-						<td>
-							<label for="lastname" style="width:102%; margin-left: -85%;"> LAST NAME </label>
+							<label for="fullname"> FULL NAME </label>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<input type="text" id="firstname" name="firstname" placeholder="first" style="width:62%;">
-						</td>
-						<td>
-							<input type="text" id="lastname" name="lastname" placeholder="last" style="width:152%; margin-left: -86%; margin-top: -15px;">
+							<input type="text" id="fullname" name="fullname" placeholder="Full Name">
+							<p id="error_fullname" style="color:red; font-size: 12px; margin-top: -4px;"></p>
 						</td>
 					</tr>
                     <tr>
@@ -41,6 +36,7 @@
 					<tr>
                         <td>
 						    <input type="email" id="email" name="email" placeholder="abc@example.com">
+							<p id="error_email" style="color:red; font-size: 12px; margin-top: -4px;"></p>
 						</td>
 					</tr>
 					<tr>
@@ -101,7 +97,7 @@
                     </tr>
                     
                         <td>
-                            <input type="radio" id="male" name="gender" value="MALE">
+                            <input type="radio" id="male" name="gender" value="MALE" checked>
                             <label for="male"> MALE </label>
   
                             <input type="radio" id="female" name="gender" value="FEMALE">
